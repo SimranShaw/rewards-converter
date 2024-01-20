@@ -9,10 +9,18 @@ public class RewardValue {
     }
 
     double getCashValue(){
-        return miles / 0.0035;
+        return cash;
     }
 
     double getMilesValue(){
+        return miles;
+    }
+
+    double cash_to_miles(){
         return cash * 0.0035;
+    }
+
+    double miles_to_cash(){
+        return miles / 0.0035;
     }
 }
